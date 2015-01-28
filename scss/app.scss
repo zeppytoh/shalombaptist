@@ -101,7 +101,9 @@ h4 {
 }
 .announcements {
   @include grid-row();
-  margin-top: 1em;
+}
+.main-content {
+  @include grid-row($behavior: nest);
 }
 .box {
   padding: 1em;
@@ -109,9 +111,12 @@ h4 {
 .black-box {
   @media #{$medium-up} {
     @include grid-column(6);
+    margin-left: 1em; margin-right: -1em;
+
   }
   @media #{$small-only} {
-    @include grid-column(12);
+    @include grid-column(11, $center: true);
+    text-align: center;
   }
   background-color: rgba(0, 0, 0, 0.55);
   padding: 2em;
@@ -122,10 +127,21 @@ h4 {
   }
 }
 .trans-box {
-  @include grid-column(6, $last-column: true);
-  text-align: right;
-  p, a {
+  @media #{$medium-up} {
+
+    @include grid-column(5, $offset:1, $last-column: true);
+    text-align: right;
+  }
+  @media #{$small-only} {
+    @include grid-column(12);
+    text-align: center;
+  }
+  p {
     color: white;
+  }
+  a {
+    background: black;
+    padding: 0.5em;
   }
   a:hover {
     text-decoration: underline;
