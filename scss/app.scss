@@ -124,11 +124,11 @@ h4 {
 .trans-box {
   @include grid-column(6, $last-column: true);
   text-align: right;
-  p {
+  p, a {
     color: white;
   }
-  a {
-    color: white;
+  a:hover {
+    text-decoration: underline;
   }
   h3 {
     line-height: 140%;
