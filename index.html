@@ -10,6 +10,7 @@
   <body>
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
+        <!-- navigation for small-only screens using off-canvas -->
         <nav class="tab-bar show-for-small-only">
           <section class="left-small">
             <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -20,57 +21,76 @@
         </nav>
         <aside class="left-off-canvas-menu">
           <!-- this should contain the same navigation walker as the main navigation for desktop sizes -->
-          <ul>
-            <li><a href="#" class="button">Home</a></li>
-            <li><a href="#" class="button">About</a></li>
-            <li><a href="#" class="button">Join Us</a></li>
-            <li><a href="#" class="button">Contact</a></li>
+          <ul class="off-canvas-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </aside>
       <section class="hero">
-        <div class="main-header">
-          <div class="large-12 columns">
-              <div class="logo">
-                <div class="large-3 small-12 columns"><a href="#home"><img src="img/ShalomLogo.png" /></a></div>
-              </div>
+        <!-- navigation for medium-up screens -->
+        <div class="contain-to-grid show-for-medium-up">
+          <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <a href="#"><img src="img/ShalomLogo.png" /></a>
+              </li>
+            </ul>
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Ministries</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </section>
+          </nav>
 
-              <hr>
-              <div class="row">
-                <div class="large-6 columns large-centered">
-                  <ul class="button-group even-4">
-                    <li><a href="#" class="button">Home</a></li>
-                    <li><a href="#" class="button">About</a></li>
-                    <li><a href="#" class="button">Join Us</a></li>
-                    <li><a href="#" class="button">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="large-6 columns about-box">
+        <div class="hero-row">
             <div class="black-box">
-              <h2>We’re Shalom Baptist Chapel.</h2>
-              <p>An evangelical church in CCK, Singapore that seeks to build a community that hears and lives out the good news of Jesus Christ.
+              <h2>Welcome!</h2>
+              <p>We're an evangelical church in CCK, Singapore that seeks to build a community that hears and lives out the good news of Jesus Christ.
               <p>Want to know more?</p>
               <a href="#" class="secondary small button">Find out here →</a>
             </div>
-          </div>
+            <div class="trans-box">
+              <h3><em>Our mission is to Make, Mature and Multiply Followers of Jesus Christ.</em></h3>
+            </div>
         </div>
       </section>
-
       <section class="hero-content">
       <div class="row">
-        <div class="large-8 columns about-content">
-          <h4>Our theme this year: "Devotion to Prayer".</h4>
-          <p>Prayer counts among the most universal of human activities.</p>
+        <div class="large-12 columns box">
+          <div class="main-content">
+            <div class="small-12 large-8 columns">
+              <h4>Our theme this year: Devoted to Pray</h4>
+            <p>Prayer counts among the most universal of human activities.</p>
 
-          <h5>For Renewal</h5>
-<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
-          <h5>For Revelation</h5>
- <img style="float:left; padding-top: 0.5em; margin-right: 1em;"src="http://placehold.it/80x80"/><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-          <h5>For Restoration</h5>
-
+            <h5>For Renewal</h5>
+  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
+            <h5>For Revelation</h5>
+   <img style="float:left; padding-top: 0.5em; margin-right: 1em;"src="http://placehold.it/80x80"/><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+            <h5>For Restoration</h5>
+            </div>
+            <div class="small-12 large-4 columns">
+            <ul class="small-block-grid-2">
+              <li><a href="#"><img src="img/nanyang-christmas.jpg"/></a></li>
+              <li><a href="#"><img src="img/youth1.jpg"/></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="announcements">
+        <div class="large-8 columns box">
+          <h4>Latest announcements</h4>
+          <ul>
+            <li><a href="#">Home Fellowship</a></li>
+            <li><a hre="#">Monthly Prayer Meeting</a></li>
+          </ul>
         </div>
         <div class="large-4 columns">
           <ul class="small-block-grid-2">
@@ -102,7 +122,7 @@
       <footer>
         <div class="row">
           <div class="large-6 columns">
-            <p>© Copyright no one at all. Go to town.</p>
+            <p>© Copyright Shalom Baptist Chapel.</p>
           </div>
           <div class="large-6 columns">
             <ul class="inline-list right">

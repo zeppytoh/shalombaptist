@@ -39,6 +39,7 @@
 //   "foundation/components/visibility";
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 hr {
   text-align: center;
@@ -79,7 +80,7 @@ h3 {
   padding-bottom: 10px;
 }
 h4 {
-  font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
+  font-family: $header-font-family;
   color: #000;
   font-size: 28px;
   padding-top: 5px;
@@ -98,17 +99,38 @@ h4 {
     font-size: 14px;
   }
 }
-.about-box {
-  color: #fff;
+.announcements {
+  @include grid-row();
+  margin-top: 1em;
+}
+.box {
+  padding: 1em;
 }
 .black-box {
+  @media #{$medium-up} {
+    @include grid-column(6);
+  }
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
   background-color: rgba(0, 0, 0, 0.55);
-  padding: 35px;
+  padding: 2em;
   font-weight: 900;
+  color: #fff;
+  h4 {
+    font-weight: 900;
+  }
 }
-.black-box p {
-  font-weight: 900;
+.trans-box {
+  @include grid-column(6, $last-column: true);
+  text-align: right;
+  h3 {
+    line-height: 140%;
+    color: rgba(255,255,255,0.6);
+
+  }
 }
+
 .secondary.small.button {
   background-color: transparent;
   color: #fff;
@@ -120,32 +142,51 @@ h4 {
 .secondary.small.button:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.main-header {
-  @include grid-row();
-  color: #fff;
-}
-.logo {
-  @include grid-row($behavior: nest);
 
+.logo {
+  @include grid-row();
+  margin-bottom: 2em;
+  border-bottom: 1px solid white;
+  .button-group li .button {
+    border: 0!important;
+  }
+  .button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border-width: 0;
+    text-align: center;
+    box-shadow: 0 0 0;
+    margin-top: 1em;
+  }
+  .button:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+  }
 }
-.about-content {
+.top-bar {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.top-bar .name a img {
+  width: auto;
+  height: rem-calc(80);
+  padding-left: 1em;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+}
+
+.top-bar-section li a:hover {
+}
+
+.box {
   background-color: #fff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.button-group li .button {
-  border: 0!important;
+.hero-row {
+  padding-top: 2em;
+  @include grid-row();
 }
-.button {
-  -webkit-appearance: none;
-  background-color: transparent;
-  border-width: 0;
-  text-align: center;
-  box-shadow: 0 0 0;
-}
-.button:hover {
-  color: rgba(255, 255, 255, 0.7);
-  background-color: transparent;
-}
+
 footer p,
 footer a {
   font-size: 14px;
@@ -158,9 +199,9 @@ footer a {
   box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 0, 0.2);
 }
 .hero-content {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #EAEAEA;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #eaeaea;
 }
 .panel {
   margin: 40px 0 40px 0;
