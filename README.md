@@ -1,6 +1,6 @@
-# Foundation libsass template
+# Shalom Baptist Chapel website template
 
-This is a template to start your own project that uses Grunt and libsass!
+This is the ongoing development for [zeppytoh.github.io/shalombaptist](http://zeppytoh.github.io/shalombaptist). 
 
 ## Requirements
 
@@ -13,7 +13,7 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
+git clone git@github.com:zeppytoh/shalombaptist.git
 npm install && bower install
 ```
 
