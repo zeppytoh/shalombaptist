@@ -101,10 +101,14 @@ ul.inline-list.right a:hover {
   @include grid-row();
 }
 .sidebar {
-  @include grid-column(5);
+  @include grid-column(4);
 
   h1, h2, h3, h4, h5, h6, p, li {
     color: white;
+  }
+
+  .box {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -112,7 +116,7 @@ ul.inline-list.right a:hover {
   @include grid-row($behavior: nest);
 }
 
-.screenshots-grid {
+.photoshots-grid {
   @include block-grid (
     $per-row: 4,
     $spacing: 0.01em,
@@ -122,43 +126,46 @@ ul.inline-list.right a:hover {
 
 /*
 ==========================================================================
-Screenshots Intro
+photoshots Intro
 ========================================================================== */
-.screenshots-intro {
+.photoshots-intro {
     padding: 170px 0 100px 0;
     background-color: #f6f7f9;
 }
-.screenshots-intro h1 {
+.photoshots-intro h1 {
     margin-bottom: 20px;
     color: #24374b;
     font-weight: 400;
     font-size: 22px;
 }
-.screenshots-intro p {
+.photoshots-intro p {
     margin-bottom: 25px;
     color: #778899;
 }
 
-/* ==========================================================================
-Screenshots
-========================================================================== */
+/* ============================================================
+photoshots
+========================================================= */
 
-.screenshots figure {
+.photoshots figure {
     position: relative;
     overflow: hidden;
+    margin: 0;
+  padding: 0;
+
 }
-.screenshots figure img {
+.photoshots figure img {
     width: 100%;
     height: 100%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
-.screenshots figure:hover img, .screenshots figure:focus img {
+.photoshots figure:hover img, .photoshots figure:focus img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-.screenshots figcaption {
+.photoshots figcaption {
     position: absolute;
     top: 0;
     left: 0;
@@ -172,30 +179,30 @@ Screenshots
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
-.screenshots figcaption a {
+.photoshots figcaption a {
     color: #fff
 }
-.screenshots figcaption a:hover, .screenshots figcaption a:focus {
+.photoshots figcaption a:hover, .photoshots figcaption a:focus {
     color: #73d0da
 }
-.screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
+.photoshots figure:hover figcaption, .photoshots figure:focus figcaption {
     opacity: 1
 }
 .visible {
     opacity: 1
 }
-.screenshots figure.cs-hover figcaption {
+.photoshots figure.cs-hover figcaption {
     opacity: 1
 }
-.screenshots figcaption i {
+.photoshots figcaption i {
     font-size: 35px
 }
-.screenshots figcaption p {
+.photoshots figcaption p {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 400;
 }
-.screenshots figcaption .caption-content {
+.photoshots figcaption .caption-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -208,15 +215,13 @@ Screenshots
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
-.screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
+.photoshots figure:hover figcaption .caption-content, .photoshots figure:focus figcaption .caption-content {
     -webkit-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
 }
 
-.box {
-  padding: 1em;
-}
+
 .black-box {
   @media #{$medium-up} {
     @include grid-column(6);
@@ -239,12 +244,14 @@ Screenshots
   @media #{$medium-up} {
 
     @include grid-column(5, $offset:1, $last-column: true);
-    text-align: right;
+    text-align: left;
   }
   @media #{$small-only} {
     @include grid-column(12);
     text-align: center;
   }
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1em;
   p {
     color: white;
   }
@@ -257,8 +264,9 @@ Screenshots
   }
   h3 {
     line-height: 140%;
-    color: rgba(255,255,255,0.6);
-
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    text-align: left;
   }
 }
 
@@ -310,8 +318,9 @@ Screenshots
 }
 
 .box {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
 }
 
 .hero-row, .innerpage-row {
