@@ -100,8 +100,14 @@ ul.inline-list.right a:hover {
 .announcements {
   @include grid-row();
 }
+
 .sidebar {
-  @include grid-column(4);
+    @media #{$medium-up} {
+      @include grid-column(4);
+    }
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
 
   h1, h2, h3, h4, h5, h6, p, li {
     color: white;
@@ -226,7 +232,6 @@ photoshots
   @media #{$medium-up} {
     @include grid-column(6);
     margin-left: 1em; margin-right: -1em;
-
   }
   @media #{$small-only} {
     @include grid-column(11, $center: true);
