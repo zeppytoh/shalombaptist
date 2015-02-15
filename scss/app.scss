@@ -130,7 +130,9 @@ ul.inline-list.right a:hover {
   }
 }
 
-
+.home-content {
+  @include grid-row($behavior: nest);
+}
 
 .photoshots-grid {
   @include block-grid (
