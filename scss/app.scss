@@ -100,6 +100,7 @@ ul.inline-list.right a:hover {
 .announcements {
   @include grid-row();
 }
+
 .main-content {
   @media #{$medium-up} {
     @include grid-column(8);
@@ -129,9 +130,7 @@ ul.inline-list.right a:hover {
   }
 }
 
-.main-content {
-  @include grid-row($behavior: nest);
-}
+
 
 .photoshots-grid {
   @include block-grid (
