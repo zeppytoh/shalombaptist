@@ -352,34 +352,18 @@
     },
 
     center_and_label : function (target, label) {
-      if (!this.rtl) {
-        target.css({
-          marginLeft : -(target.outerWidth() / 2),
-          marginTop : -(target.outerHeight() / 2)
+      if (!this.rtl && label.length > 0) {
+        label.css({
+          marginLeft : -(label.outerWidth() / 2),
+          marginTop : -(target.outerHeight() / 2)-label.outerHeight()-10
         });
-
-        if (label.length > 0) {
-          label.css({
-            marginLeft : -(label.outerWidth() / 2),
-            marginTop : -(target.outerHeight() / 2)-label.outerHeight()-10
-          });
-        }
       } else {
-        target.css({
-          marginRight : -(target.outerWidth() / 2),
-          marginTop : -(target.outerHeight() / 2),
+        label.css({
+          marginRight : -(label.outerWidth() / 2),
+          marginTop : -(target.outerHeight() / 2)-label.outerHeight()-10,
           left: 'auto',
           right: '50%'
         });
-
-        if (label.length > 0) {
-          label.css({
-            marginRight : -(label.outerWidth() / 2),
-            marginTop : -(target.outerHeight() / 2)-label.outerHeight()-10,
-            left: 'auto',
-            right: '50%'
-          });
-        }
       }
       return this;
     },
