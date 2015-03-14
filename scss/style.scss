@@ -1,3 +1,4 @@
+
 /***************** PSEUDO & GENERAl CLASSES ***************/
 
 
@@ -93,7 +94,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .page-header .box-heading{
-	font-family: 'Petrona';
+	font-family: $header-font-family;
 	font-size: 14px;
 	padding: 10px;
 	border: 1px solid #222;
@@ -104,15 +105,18 @@ h1, h2, h3, h4, h5, h6{
 .page-header .hr{
 	margin-top: 22px;
 }
+#events-divider {
+  position: relative;
+}
 
-#quote-divider{
-	background: url('../img/d1.jpg');
+#quote-divider {
+	background: url('../img/f2.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 }
 
-#quote-divider:before{
+#quote-divider:before, #events-divider:before {
 	content:'';
 	width: 100%;
 	height: 100%;
@@ -120,9 +124,11 @@ h1, h2, h3, h4, h5, h6{
 	position: absolute;
 }
 
-#quote-divider .large-8{
-	padding-top: 88px;
-	padding-bottom: 88px;
+#quote-divider, #events-divider, #about {
+  & .large-8 {
+      padding-top: 4em;
+      padding-bottom: 4em;
+  }
 }
 
 #quote-divider .thick-hr{
@@ -222,7 +228,7 @@ h1, h2, h3, h4, h5, h6{
 	overflow: hidden;
 	list-style: none;
 	padding-top: 37px;
-	display: inline-block !important;
+	display: inline-block;
 	margin-bottom: 0px;
 }
 
@@ -242,9 +248,18 @@ h1, h2, h3, h4, h5, h6{
 	color: #222;
 }
 
-#logo{
-	padding-top: 32px;
+#logo {
+    @media #{$small-up} {
+      padding-top: 10px; width: 65%;
+    }
+    @media #{$small-only} {
+  padding-top: 8px;
+  width: 50%;
+    }
+
 }
+
+
 
 /***************** HOME ***************/
 
@@ -325,10 +340,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .slider-tile .biline{
-	width: 60%;
+	width: 85%;
 	font-weight: 300;
 	margin: 0px auto;
-	font-family: 'Petrona';
+	font-family: "Petrona";
 }
 
 /***************** ABOUT ***************/
