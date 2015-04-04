@@ -6055,7 +6055,7 @@ iframe {
 
 .shalom-header {
   float: left;
-  width: 80%; }
+  width: 20%; }
 
 .shalom-header h1 {
   font-family: Georgia, serif;
@@ -6075,8 +6075,7 @@ iframe {
   padding: 0 0.9375;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-  width: 70%; }
+  letter-spacing: 0.02em; }
   .shalom-header h1.site-title strong {
     letter-spacing: 0.2em;
     font-weight: 700;
