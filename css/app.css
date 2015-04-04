@@ -6062,7 +6062,7 @@ iframe {
     .shalom-header {
       width: 60%; }
       .shalom-header h1.site-title {
-        width: 80%; } }
+        width: 70%; } }
 
 .shalom-header h1 {
   font-family: Georgia, serif;
@@ -6077,7 +6077,7 @@ iframe {
   color: #fff;
   background-size: contain;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   position: relative;
   padding: 0 0.9375;
   line-height: 1;
