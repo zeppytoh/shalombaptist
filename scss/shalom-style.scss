@@ -701,7 +701,7 @@ font-size: 1em;
     padding-right: 0;
     .shalom-index-cover {
       width: 100%;
-//      height: 25rem;
+      height: 25rem;
       position: relative;
       background-image: url('../img/roof-bg.jpg');
       background-attachment: fixed;
@@ -712,7 +712,7 @@ font-size: 1em;
       padding-bottom: 12rem;
 
       @media only screen and (min-width: 40.063em) {
-//        height: 37.5rem;
+        height: 37.5rem;
         padding-top: 12rem;
         padding-bottom: 14rem;
       }
