@@ -6417,9 +6417,8 @@ iframe {
     padding-right: 0; }
     .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
       width: 100%;
-      height: auto;
       position: relative;
-      background-image: url('../img/roof-bg.jpg');
+      background-image: url('../img/f2.jpg');
       background-attachment: fixed;
       background-position: bottom right;
       background-size: cover;
@@ -6428,7 +6427,6 @@ iframe {
       padding-bottom: 12rem; }
       @media only screen {
         .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
-          height: auto;
           padding-top: 12rem;
           padding-bottom: 14rem; } }
       .shalom-index-head.shalom-index-head-cover .shalom-index-cover .shalom-index-title {
