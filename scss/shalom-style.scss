@@ -290,7 +290,7 @@ iframe {
 .shalom-header {
   float: left;
 
-  @media #{$medium-up} {
+  @media #{$small-up} {
     width: 23%;
   }
   @media #{$small-only} {

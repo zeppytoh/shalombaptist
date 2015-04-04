@@ -6055,7 +6055,7 @@ iframe {
 
 .shalom-header {
   float: left; }
-  @media only screen and (min-width:40.063em) {
+  @media only screen {
     .shalom-header {
       width: 23%; } }
   @media only screen and (max-width: 40em) {
