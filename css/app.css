@@ -6054,7 +6054,8 @@ iframe {
  }
 
 .shalom-header {
-  float: left; }
+  float: left;
+  width: 80%; }
 
 .shalom-header h1 {
   font-family: Georgia, serif;
