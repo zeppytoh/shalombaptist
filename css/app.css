@@ -6413,12 +6413,12 @@ iframe {
     .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
       width: 100%;
       height: 29rem;
-      padding-top: 4rem;
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50% 50%;
-      box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4); }
+      box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
+      padding-top: 8rem; }
       @media only screen and (min-width:40.063em) {
         .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
           padding-top: 10rem;
