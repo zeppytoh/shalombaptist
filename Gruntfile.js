@@ -9,9 +9,11 @@ module.exports = function(grunt) {
       dist: {
         options: {
           outputStyle: 'expanded'
+					// options: nested, compressed, expanded
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'css/app.css': 'scss/app.scss',
+					'css/vendor/font-awesome.css': 'scss/font-awesome.scss'
         }        
       }
     },

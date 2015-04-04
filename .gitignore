@@ -1,7 +1,6 @@
 *.DS_Store
 
 /node_modules/*
-/bower_components/*
 /reallytest.html
 /test.html
 /4sl accordion.html

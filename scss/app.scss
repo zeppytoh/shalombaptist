@@ -1,7 +1,7 @@
 @import "settings";
 //@import "foundation";
 // Or selectively include components
- @import
+@import
    "foundation/components/accordion",
    "foundation/components/alert-boxes",
    "foundation/components/block-grid",
@@ -35,8 +35,8 @@
    "foundation/components/tooltips",
    "foundation/components/top-bar",
    "foundation/components/type",
-   "foundation/components/offcanvas";
-//   "foundation/components/visibility";
+   "foundation/components/offcanvas",
+   "foundation/components/visibility";
 
 //hr {
 //  text-align: center;
@@ -399,5 +399,6 @@
 //  background-color: rgba(0, 0, 0, 0.1);
 //}
 
-@import "style";
-@import "responsive";
+@import "shalom-style";
+@import "shalom-post";
+
