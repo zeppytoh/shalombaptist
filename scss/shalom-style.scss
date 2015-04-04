@@ -289,8 +289,8 @@ iframe {
 
 .shalom-header {
   float: left;
-  width: 50%;
-  @media only screen and (min-width: 40.063em) {
+  width: 60%;
+  @media #{$small-up} {
     width: 25%;
   }
 }
