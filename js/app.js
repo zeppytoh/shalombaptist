@@ -1,5 +1,5 @@
 /* shalom Theme javascripts module */
-var shalom = (function($) {
+var shalom = (function ($) {
 
 	'use strict';
 	var docElem = document.documentElement,
@@ -9,6 +9,7 @@ var shalom = (function($) {
 		indexImageContainer = '.shalom-index-post-img',
 		indexImageOverlay = '.shalom-image-overlay',
 		galleryClass = '.shalom-gallery',
+        sliderClass = '.shalom-slider',
         smoothScrollClass = '.shalom-scroll',
 		imagePopupClass = '.shalom-image-popup',
 		imagePopupClassFiltered = '.filtered .shalom-image-popup',
@@ -24,11 +25,11 @@ var shalom = (function($) {
 		sortMenus = '.shalom-index-sort',
 		sortMobileActivator = '.shalom-mobile-sort > i.fa',
 
-		_userAgentInit = function() {
+		_userAgentInit = function () {
 			docElem.setAttribute('data-useragent', navigator.userAgent);
 		},
 		/* gallery config - http://owlgraphic.com/owlcarousel/#customizing*/
-		_owlCarousel = function() {
+		_owlCarousel = function () {
 			if($(galleryClass).length) {
 				$(galleryClass).each(function() {
 					$(this).owlCarousel({
@@ -37,11 +38,20 @@ var shalom = (function($) {
 						itemsScaleUp: true
 					});
 				});
-			}
+			};
+            if($(sliderClass).length) {
+              $(sliderClass).each(function() {
+                $(this).owlCarousel({
+                  autoPlay: 5000,
+                  singleItem: true
+                });
+              });
+            };
+
 		},
         /* same-page links scrolling smoothly
         http://github.com/kswedberg/jquery-smooth-scroll*/
-        _smoothScroll = function() {
+        _smoothScroll = function () {
           if($(smoothScrollClass).length) {
             $(smoothScrollClass).smoothScroll({
               offset: -70,
