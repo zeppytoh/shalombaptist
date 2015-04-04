@@ -6062,7 +6062,7 @@ iframe {
     .shalom-header {
       width: 60%; }
       .shalom-header h1.site-title {
-        width: 80%; }
+        width: 100%; }
         @media only screen and (orientation: landscape) {
           .shalom-header h1.site-title {
             width: 60%; } } }

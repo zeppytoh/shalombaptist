@@ -295,7 +295,7 @@ iframe {
   }
   @media #{$small-only} {
     h1.site-title {
-      width: 80%;
+      width: 100%;
       @media #{$landscape} {
         width: 60%;
       }
