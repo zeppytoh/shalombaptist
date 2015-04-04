@@ -6062,7 +6062,10 @@ iframe {
     .shalom-header {
       width: 60%; }
       .shalom-header h1.site-title {
-        width: 70%; } }
+        width: 75%; }
+        @media only screen and (orientation: landscape) {
+          .shalom-header h1.site-title {
+            width: 60%; } } }
 
 .shalom-header h1 {
   font-family: Georgia, serif;
