@@ -6055,7 +6055,8 @@ iframe {
 
 .shalom-header {
   float: left;
-  width: 20%; }
+  width: 25%;
+  border: 1px solid red; }
 
 .shalom-header h1 {
   font-family: Georgia, serif;
