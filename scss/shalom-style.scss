@@ -721,11 +721,11 @@ iframe {
       background-position: bottom right;
       background-size: cover;
       box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
-      padding-top: 8rem;
+      padding-top: 4rem;
       padding-bottom: 12rem;
 
       @media #{$small-up} {
-        padding-top: 12rem;
+        padding-top: 10rem;
         padding-bottom: 14rem;
       }
       .shalom-index-title {

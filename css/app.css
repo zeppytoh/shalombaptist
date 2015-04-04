@@ -6423,11 +6423,11 @@ iframe {
       background-position: bottom right;
       background-size: cover;
       box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
-      padding-top: 8rem;
+      padding-top: 4rem;
       padding-bottom: 12rem; }
       @media only screen {
         .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
-          padding-top: 12rem;
+          padding-top: 10rem;
           padding-bottom: 14rem; } }
       .shalom-index-head.shalom-index-head-cover .shalom-index-cover .shalom-index-title {
         border: 0;
