@@ -291,10 +291,13 @@ iframe {
   float: left;
 
   @media #{$medium-up} {
-    width: 20%;
+    width: 23%;
   }
   @media #{$small-only} {
-    width: 90%;
+    h1.site-title {
+      width: 80%
+    }
+    width: 80%;
   }
 }
 
