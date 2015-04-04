@@ -315,7 +315,10 @@ iframe {
   color: #fff;
   background-size: contain;
   font-family: $font-family-sans-serif, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  @media #{$medium-up} {
+    font-size: 1.2em;
+  }
   position: relative;
   padding: 0 0.9375;
   line-height: 1;
