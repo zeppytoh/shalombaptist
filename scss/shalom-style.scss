@@ -46,7 +46,7 @@ body .shalom-body-bg-overlay {
 }
 
 body.home-template {
-    background-color: #1e2226;
+    background-color: #fff;
 }
 
 .touch body {
@@ -558,6 +558,7 @@ iframe {
 .headroom .shalom-header h1.site-title {
   font-size: 1em;
   margin-top: 0.2em;
+  width: 90%;
 }
 
 .big-search {
@@ -680,33 +681,7 @@ iframe {
 /**********************************/
 /* shalom index site content styles */
 /**********************************/
-.shalom-index-container {
-  padding-top: 0;
-  padding-bottom: 0;
-    position: relative;
-    overflow: hidden;
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-  img, .flex-video {
-    margin-bottom: 1.25rem;
-  }
-  .shalom-post {
-    background: #fff;
-    padding: 0.625rem 1.875rem;
-  }
 
-}
-@media only screen and (min-width: 40.063em) {
-  .shalom-index-container .shalom-post {
-    padding: 0.625rem 4.375rem; }
-
-  .shalom-index-container {
-    img, .flex-video {
-      margin-bottom: 3.125rem;
-    }
-  }
-}
 
 .shalom-index-head {
   text-align: center;
@@ -715,31 +690,27 @@ iframe {
     padding-right: 0;
     .shalom-index-cover {
       width: 100%;
+      height: 25rem;
       position: relative;
-      background-image: url('../img/f2.jpg');
-      background-attachment: fixed;
-      background-position: bottom right;
+      background-repeat: no-repeat;
       background-size: cover;
+      background-position: 50% 50%;
       box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
-      padding-top: 4rem;
-      padding-bottom: 12rem;
-
-      @media #{$small-up} {
+      @media #{$medium-up} {
         padding-top: 10rem;
-        padding-bottom: 14rem;
+        height: 37.5rem;
       }
       .shalom-index-title {
         border: 0;
         padding: 0;
         color: #fff;
-        padding: 1.875rem 0.9375rem 5rem;
         margin: 0;
         background-color: rgba(37, 37, 37, 0.6);
         position: absolute;
         bottom: 0;
         width: 100%;
-        text-align: center;
-        @media only screen and (min-width: 40.063em) {
+        text-align: left;
+        @media #{$medium-up}  {
           padding: 0;
           padding: 1.5625rem 0.9375rem 5rem;
           margin: 0;
@@ -748,19 +719,19 @@ iframe {
     }
   }
   h1.shalom-index-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     letter-spacing: normal;
      margin-bottom: 1.5625rem;
     margin-top: 0;
     border-top: 1px solid #dadada;
     padding-top: 0.625rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
     line-height: 1.1;
-    @media only screen and (min-width: 40.063em) {
-      font-size: 3.5rem;
-      margin-bottom: 2.1875rem;
+    @media #{$medium-up} {
+      font-size: 3.0rem;
+      margin-bottom: 1rem;
       letter-spacing: 0.0625rem;
-      line-height: 1.4;
+      line-height: 1.1;
     }
   }
 }
@@ -1511,5 +1482,80 @@ main.shalom-index-content {
 	font-family: $font-family-serif, Georgia, seif;
 }
 
+.hero-row {
+  @include grid-row();
+  h1 {
+    font-size: 32px;
+    color: #fff;
+    line-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 34px;
+  }
+  h3 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  h4 {
+    font-family: $header-font-family;
+    color: #000;
+    font-size: 28px;
+    padding-top: 5px;
+  }
+}
+.black-box {
+  @media #{$medium-up} {
+    @include grid-column(6);
+    margin-left: 1em; margin-right: -1em;
+  }
+  @media #{$small-only} {
+    @include grid-column(11, $center: true);
+    text-align: center;
+  }
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 2em;
+  font-weight: 900;
+  color: #fff;
+  h4 {
+    font-weight: 900;
+  }
+}
+.trans-box {
+  @media #{$medium-up} {
 
+    @include grid-column(5, $offset:1, $last-column: true);
+    text-align: left;
+  }
+  @media #{$small-only} {
+    @include grid-column(12);
+    text-align: center;
+  }
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1em;
+  p {
+    color: white;
+  }
+  a {
+    background: black;
+    padding: 0.5em;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h3 {
+    line-height: 140%;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    text-align: left;
+  }
+}
 

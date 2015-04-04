@@ -4793,7 +4793,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif, "Victor";
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #222222;
@@ -5849,7 +5849,7 @@ body .shalom-body-bg-overlay {
   display: none; }
 
 body.home-template {
-  background-color: #1e2226; }
+  background-color: #fff; }
 
 .touch body {
   background-color: #fff; }
@@ -6023,7 +6023,7 @@ iframe {
   max-height: 2.75rem; }
 
 .shalom-site-head .shalom-blog-description h2 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif, "Victor", Georgia, serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Georgia, serif;
   font-weight: 400;
   font-size: 2.25rem;
   padding-left: 2.8125rem;
@@ -6106,7 +6106,7 @@ iframe {
   padding-top: 0;
   margin-right: 0.9375rem;
   float: right;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif, "Victor", Georgia, serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Georgia, serif;
   font-weight: 400;
   font-size: 2.625rem; }
 
@@ -6286,7 +6286,8 @@ iframe {
 
 .headroom .shalom-header h1.site-title {
   font-size: 1em;
-  margin-top: 0.2em; }
+  margin-top: 0.2em;
+  width: 90%; }
 
 .big-search {
   position: absolute;
@@ -6389,27 +6390,6 @@ iframe {
 /**********************************/
 /* shalom index site content styles */
 /**********************************/
-.shalom-index-container {
-  padding-top: 0;
-  padding-bottom: 0;
-  position: relative;
-  overflow: hidden; }
-  .shalom-index-container h1, .shalom-index-container h2, .shalom-index-container h3, .shalom-index-container h4, .shalom-index-container h5, .shalom-index-container h6 {
-    font-weight: 300; }
-  .shalom-index-container img, .shalom-index-container .flex-video {
-    margin-bottom: 1.25rem; }
-  .shalom-index-container .shalom-post {
-    background: #fff;
-    padding: 0.625rem 1.875rem; }
-
-@media only screen and (min-width: 40.063em) {
-  .shalom-index-container .shalom-post {
-    padding: 0.625rem 4.375rem; }
-
-  .shalom-index-container img, .shalom-index-container .flex-video {
-    margin-bottom: 3.125rem; }
- }
-
 .shalom-index-head {
   text-align: center; }
   .shalom-index-head.shalom-index-head-cover {
@@ -6417,49 +6397,46 @@ iframe {
     padding-right: 0; }
     .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
       width: 100%;
+      height: 25rem;
       position: relative;
-      background-image: url('../img/f2.jpg');
-      background-attachment: fixed;
-      background-position: bottom right;
+      background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
-      padding-top: 4rem;
-      padding-bottom: 12rem; }
-      @media only screen {
+      background-position: 50% 50%;
+      box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4); }
+      @media only screen and (min-width:40.063em) {
         .shalom-index-head.shalom-index-head-cover .shalom-index-cover {
           padding-top: 10rem;
-          padding-bottom: 14rem; } }
+          height: 37.5rem; } }
       .shalom-index-head.shalom-index-head-cover .shalom-index-cover .shalom-index-title {
         border: 0;
         padding: 0;
         color: #fff;
-        padding: 1.875rem 0.9375rem 5rem;
         margin: 0;
         background-color: rgba(37, 37, 37, 0.6);
         position: absolute;
         bottom: 0;
         width: 100%;
-        text-align: center; }
-        @media only screen and (min-width: 40.063em) {
+        text-align: left; }
+        @media only screen and (min-width:40.063em) {
           .shalom-index-head.shalom-index-head-cover .shalom-index-cover .shalom-index-title {
             padding: 0;
             padding: 1.5625rem 0.9375rem 5rem;
             margin: 0; } }
   .shalom-index-head h1.shalom-index-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     letter-spacing: normal;
     margin-bottom: 1.5625rem;
     margin-top: 0;
     border-top: 1px solid #dadada;
     padding-top: 0.625rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
     line-height: 1.1; }
-    @media only screen and (min-width: 40.063em) {
+    @media only screen and (min-width:40.063em) {
       .shalom-index-head h1.shalom-index-title {
-        font-size: 3.5rem;
-        margin-bottom: 2.1875rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
         letter-spacing: 0.0625rem;
-        line-height: 1.4; } }
+        line-height: 1.1; } }
 
 .shalom-index-content .shalom-mobile-sort {
   position: relative;
@@ -6583,7 +6560,7 @@ iframe {
     cursor: pointer; }
 
   .shalom-index-content .shalom-index-sort.dropdown-sorter .shalom-too-wide-sort i.fa span {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif, "Victor", Georgia, serif; }
+    font-family: "Montserrat", Helvetica, Arial, sans-serif, Georgia, serif; }
  }
 
 @media only screen and (min-width: 70em) {
@@ -6899,7 +6876,7 @@ iframe {
   padding-bottom: 1.25rem; }
 
 .tag-template .shalom-post-content .shalom-read-more a, .author-template .shalom-post-content .shalom-read-more a {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif, "Victor", Georgia, serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Georgia, serif;
   font-size: 0.875rem;
   font-weight: 300;
   display: inline-block;
@@ -7057,7 +7034,101 @@ main.shalom-index-content {
   width: 85%;
   font-weight: 300;
   margin: 0px auto;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif, "Victor", Georgia, seif; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif, Georgia, seif; }
+
+.hero-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  .hero-row:before, .hero-row:after {
+    content: " ";
+    display: table; }
+  .hero-row:after {
+    clear: both; }
+  .hero-row h1 {
+    font-size: 32px;
+    color: #fff;
+    line-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    text-align: center; }
+  .hero-row h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 34px; }
+  .hero-row h3 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 10px; }
+  .hero-row h4 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    color: #000;
+    font-size: 28px;
+    padding-top: 5px; }
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 2em;
+  font-weight: 900;
+  color: #fff; }
+  @media only screen and (min-width:40.063em) {
+    .black-box {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 50%;
+      float: left;
+      margin-left: 1em;
+      margin-right: -1em; } }
+  @media only screen and (max-width: 40em) {
+    .black-box {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 91.6666666667%;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      text-align: center; } }
+  .black-box h4 {
+    font-weight: 900; }
+
+.trans-box {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1em; }
+  @media only screen and (min-width:40.063em) {
+    .trans-box {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 41.6666666667%;
+      float: right;
+      float: left;
+      margin-left: 8.3333333333% !important;
+      text-align: left; } }
+  @media only screen and (max-width: 40em) {
+    .trans-box {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left;
+      text-align: center; } }
+  .trans-box p {
+    color: white; }
+  .trans-box a {
+    background: black;
+    padding: 0.5em; }
+  .trans-box a:hover {
+    text-decoration: underline; }
+  .trans-box h3 {
+    line-height: 140%;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    text-align: left; }
 
 /* clearfix */
 .cf:before, .shalom-post-container:before, .shalom-post-author:before, .shalom-post-tags:before, .cf:after, .shalom-post-container:after, .shalom-post-author:after, .shalom-post-tags:after {
