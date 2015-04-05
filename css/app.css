@@ -6291,8 +6291,11 @@ iframe {
 .headroom .shalom-header h1.site-title {
   font-size: 1em;
   margin-top: 0.2em;
-  width: 85%;
+  width: 100%;
   color: #FAFAFA; }
+  @media only screen and (orientation: landscape) {
+    .headroom .shalom-header h1.site-title {
+      width: 85%; } }
 
 .big-search {
   position: absolute;
