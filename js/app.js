@@ -449,7 +449,6 @@ var shalom = (function ($) {
 			_goToTop();
 			_prepareShuffleFilters();
 			_tooWideSorterMenu();
-			_shuffleGrid();
 			_magnificPopup();
 			_loadMoreButtonOnStart();
 			_headroom();
@@ -457,6 +456,7 @@ var shalom = (function ($) {
 			_positionIndicator();
 			_readingTime();
 			_bodyFixed();
+            _shuffleGrid();
 		}
 	};
 

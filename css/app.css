@@ -6291,7 +6291,7 @@ iframe {
 .headroom .shalom-header h1.site-title {
   font-size: 1em;
   margin-top: 0.2em;
-  width: 90%;
+  width: 80%;
   color: #FAFAFA; }
 
 .big-search {
@@ -6583,7 +6583,7 @@ iframe {
     width: auto; }
  }
 
-.shalom-index-content .shalom-index-post {
+.shalom-index-content .shalompost {
   margin: 0.9375rem 0 0.9375rem;
   position: relative;
   padding-left: 0.9375rem;
@@ -6592,20 +6592,20 @@ iframe {
   width: 100%; }
 
 @media only screen and (min-width: 40.063em) {
-  .shalom-index-content .shalom-index-post {
+  .shalom-index-content .shalompost {
     width: 50%; }
  }
 
 @media only screen and (min-width: 64.063em) {
-  .shalom-index-content .shalom-index-post {
+  .shalom-index-content .shalompost {
     width: 33.33333%; }
  }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-container {
+.shalom-index-content .shalompost .shalompost-container {
   padding: 0 1rem 2.375rem;
   background: #fff; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-title {
+.shalom-index-content .shalompost .shalompost-title {
   font-size: 1.875rem;
   padding-bottom: 1.25rem;
   margin: 0;
@@ -6613,7 +6613,7 @@ iframe {
   letter-spacing: -0.0625rem;
   line-height: 1.1; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-title a {
+.shalom-index-content .shalompost .shalompost-title a {
   color: inherit;
   -webkit-transition: color 0.3s;
   -ms-transition: color 0.3s;
@@ -6621,58 +6621,58 @@ iframe {
   -o-transition: color 0.3s;
   transition: color 0.3s; }
 
-.shalom-index-content .shalom-index-post p {
+.shalom-index-content .shalompost p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.3; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-meta {
+.shalom-index-content .shalompost .shalompost-meta {
   color: #333333;
   padding-top: 1.125rem;
   padding-bottom: 0.625rem;
   font-size: 1.125rem; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-tags {
+.shalom-index-content .shalompost .shalompost-tags {
   color: #999;
   font-size: 0.8125rem; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-tags a {
+.shalom-index-content .shalompost .shalompost-tags a {
   color: inherit; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-tags a:hover, .shalom-index-content .shalom-index-post .shalom-index-post-tags a:active, .shalom-index-content .shalom-index-post .shalom-index-post-tags a:focus {
+.shalom-index-content .shalompost .shalompost-tags a:hover, .shalom-index-content .shalompost .shalompost-tags a:active, .shalom-index-content .shalompost .shalompost-tags a:focus {
   color: inherit; }
 
-.shalom-index-content .shalom-index-post .shalom-index-author {
+.shalom-index-content .shalompost .shalom-index-author {
   color: #999;
   font-size: 0.8125rem;
   padding-top: 0.9375rem;
   line-height: 1.5625rem; }
 
-.shalom-index-content .shalom-index-post .shalom-index-author .shalom-index-author-image {
+.shalom-index-content .shalompost .shalom-index-author .shalom-index-author-image {
   width: 1.5625rem;
   height: 1.5625rem;
   border-radius: 100%;
   float: left;
   margin-right: 0.3125rem; }
 
-.shalom-index-content .shalom-index-post .shalom-index-author a {
+.shalom-index-content .shalompost .shalom-index-author a {
   color: inherit; }
 
-.shalom-index-content .shalom-index-post .shalom-index-author a:hover, .shalom-index-content .shalom-index-post .shalom-index-author a:active, .shalom-index-content .shalom-index-post .shalom-index-author a:focus {
+.shalom-index-content .shalompost .shalom-index-author a:hover, .shalom-index-content .shalompost .shalom-index-author a:active, .shalom-index-content .shalompost .shalom-index-author a:focus {
   color: inherit; }
 
-.shalom-index-content .shalom-index-post .flex-video {
+.shalom-index-content .shalompost .flex-video {
   margin-bottom: 0; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img {
+.shalom-index-content .shalompost .shalompost-img {
   position: relative;
   overflow: hidden; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img h1, .shalom-index-content .shalom-index-post .shalom-index-post-img h2, .shalom-index-content .shalom-index-post .shalom-index-post-img h3, .shalom-index-content .shalom-index-post .shalom-index-post-img h4, .shalom-index-content .shalom-index-post .shalom-index-post-img h5, .shalom-index-content .shalom-index-post .shalom-index-post-img h6, .shalom-index-content .shalom-index-post .shalom-index-post-img p {
+.shalom-index-content .shalompost .shalompost-img h1, .shalom-index-content .shalompost .shalompost-img h2, .shalom-index-content .shalompost .shalompost-img h3, .shalom-index-content .shalompost .shalompost-img h4, .shalom-index-content .shalompost .shalompost-img h5, .shalom-index-content .shalompost .shalompost-img h6, .shalom-index-content .shalompost .shalompost-img p {
   margin: 0;
   padding: 0; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay {
   -webkit-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -6686,7 +6686,7 @@ iframe {
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay .zoom-icon, .shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay .url-icon {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay .zoom-icon, .shalom-index-content .shalompost .shalompost-img .shalom-image-overlay .url-icon {
   position: absolute;
   font-size: 1.625rem;
   outline: none;
@@ -6694,10 +6694,10 @@ iframe {
   top: -20%;
   opacity: 0; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay .zoom-icon .fa-circle, .shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay .url-icon .fa-circle {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay .zoom-icon .fa-circle, .shalom-index-content .shalompost .shalompost-img .shalom-image-overlay .url-icon .fa-circle {
   color: #fff; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay .zoom-icon {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay .zoom-icon {
   -webkit-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -6705,7 +6705,7 @@ iframe {
   transition: all 0.3s;
   left: 33%; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay .url-icon {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay .url-icon {
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -6713,18 +6713,18 @@ iframe {
   transition: all 0.5s;
   left: 52%; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay.hovered {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay.hovered {
   width: 94%;
   height: 94%;
   top: 3%;
   left: 3%; }
 
-.shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay.hovered .zoom-icon, .shalom-index-content .shalom-index-post .shalom-index-post-img .shalom-image-overlay.hovered .url-icon {
+.shalom-index-content .shalompost .shalompost-img .shalom-image-overlay.hovered .zoom-icon, .shalom-index-content .shalompost .shalompost-img .shalom-image-overlay.hovered .url-icon {
   top: 50%;
   opacity: 1;
   margin-top: -1.625rem; }
 
-.shalom-index-content .shalom-index-post.featured:before {
+.shalom-index-content .shalompost.featured:before {
   position: absolute;
   bottom: 0.5rem;
   right: 1.5rem;
@@ -6735,7 +6735,7 @@ iframe {
   display: block;
   z-index: 2; }
 
-.shalom-index-content .shalom-index-post.featured:after {
+.shalom-index-content .shalompost.featured:after {
   content: " ";
   position: absolute;
   display: block;
