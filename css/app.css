@@ -148,8 +148,8 @@ select {
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   font-size: 0.8125rem;
   transition: opacity 300ms ease-out;
-  background-color: #2ec3d6;
-  border-color: #25aabb;
+  background-color: #259be5;
+  border-color: #1887cc;
   color: #FFFFFF; }
   .alert-box .close {
     font-size: 1.375rem;
@@ -517,11 +517,11 @@ select {
     font-size: 0.6875rem;
     line-height: 0.6875rem;
     text-transform: uppercase;
-    color: #2ec3d6; }
+    color: #259be5; }
     .breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
       text-decoration: underline; }
     .breadcrumbs > * a {
-      color: #2ec3d6; }
+      color: #259be5; }
     .breadcrumbs > *.current {
       cursor: default;
       color: #333333; }
@@ -571,12 +571,12 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #2ec3d6;
-  border-color: #229eae;
+  background-color: #259be5;
+  border-color: #177ebe;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #229eae; }
+    background-color: #177ebe; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {
@@ -652,18 +652,18 @@ button, .button {
   button.round, .button.round {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #2ec3d6;
-    border-color: #229eae;
+    background-color: #259be5;
+    border-color: #177ebe;
     color: #FFFFFF;
     cursor: default;
     opacity: 0.7;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #229eae; }
+      background-color: #177ebe; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: #FFFFFF; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #2ec3d6; }
+      background-color: #259be5; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e7e7e7;
       border-color: #b9b9b9;
@@ -3094,7 +3094,7 @@ label.error {
   margin-bottom: auto;
   padding: 0.25rem 0.5rem 0.25rem;
   font-size: 0.6875rem;
-  background-color: #2ec3d6;
+  background-color: #259be5;
   color: #FFFFFF; }
   .label.radius {
     border-radius: 3px; }
@@ -3393,12 +3393,12 @@ ul.pagination {
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
       background: transparent; }
     ul.pagination li.current a, ul.pagination li.current button {
-      background: #2ec3d6;
+      background: #259be5;
       color: #FFFFFF;
       font-weight: 700;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
-        background: #2ec3d6; }
+        background: #259be5; }
   ul.pagination li {
     float: left;
     display: block; }
@@ -3433,10 +3433,10 @@ ul.pagination {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #c5eef4;
+    border-color: #c1e3f8;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
-    background: #f2fbfd;
+    background: #f2f9fd;
     color: #333333; }
     .panel.callout > :first-child {
       margin-top: 0; }
@@ -3450,9 +3450,9 @@ ul.pagination {
       .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
         line-height: 1.4; }
     .panel.callout a:not(.button) {
-      color: #2ec3d6; }
+      color: #259be5; }
       .panel.callout a:not(.button):hover, .panel.callout a:not(.button):focus {
-        color: #25aabb; }
+        color: #1887cc; }
   .panel.radius {
     border-radius: 3px; }
 
@@ -3510,7 +3510,7 @@ ul.pagination {
   padding: 0.125rem;
   margin-bottom: 0.625rem; }
   .progress .meter {
-    background: #2ec3d6;
+    background: #259be5;
     height: 100%;
     display: block; }
   .progress.secondary .meter {
@@ -3658,14 +3658,14 @@ ul.pagination {
     font-weight: 300; }
     .side-nav li a:not(.button) {
       display: block;
-      color: #2ec3d6;
+      color: #259be5;
       margin: 0;
       padding: 0.4375rem 0.875rem; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
         background: rgba(0, 0, 0, 0.025);
-        color: #6dd5e2; }
+        color: #66b9ed; }
     .side-nav li.active > a:first-child:not(.button) {
-      color: #6dd5e2;
+      color: #66b9ed;
       font-weight: 300;
       font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
     .side-nav li.divider {
@@ -3675,7 +3675,7 @@ ul.pagination {
       list-style: none;
       border-top-color: white; }
     .side-nav li.heading {
-      color: #2ec3d6;
+      color: #259be5;
       font-size: 0.875rem;
       font-weight: bold;
       text-transform: uppercase; }
@@ -3800,12 +3800,12 @@ ul.pagination {
     .sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
       border-radius: 3px;
       font-weight: 300;
-      background: #2ec3d6;
+      background: #259be5;
       padding: 0.1875rem 1rem;
       cursor: default;
       color: #FFFFFF; }
       .sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
-        background: #25aabb; }
+        background: #1887cc; }
 
 .switch {
   padding: 0;
@@ -3853,7 +3853,7 @@ ul.pagination {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .switch input:checked + label {
-    background: #2ec3d6; }
+    background: #259be5; }
   .switch input:checked + label:after {
     left: 2.25rem; }
   .switch label {
@@ -3870,7 +3870,7 @@ ul.pagination {
   .switch label:after {
     background: #FFFFFF; }
   .switch input:checked + label {
-    background: #2ec3d6; }
+    background: #259be5; }
   .switch.large label {
     width: 5rem;
     height: 2.5rem; }
@@ -4034,7 +4034,7 @@ table {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    box-shadow: 0 0 6px 1px rgba(46, 195, 214, 0.5); }
+    box-shadow: 0 0 6px 1px rgba(37, 155, 229, 0.5); }
   .th.radius {
     border-radius: 3px; }
 
@@ -4045,8 +4045,8 @@ table {
   font-weight: 700;
   color: #333333; }
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #135962;
-    color: #2ec3d6; }
+    border-bottom: dotted 1px #0d476b;
+    color: #259be5; }
   .has-tip.tip-left, .has-tip.tip-right {
     float: none !important; }
 
@@ -4083,8 +4083,8 @@ table {
     .tooltip.round > .nub {
       left: 2rem; }
   .tooltip.opened {
-    color: #2ec3d6 !important;
-    border-bottom: dotted 1px #135962 !important; }
+    color: #259be5 !important;
+    border-bottom: dotted 1px #0d476b !important; }
 
 .tap-to-close {
   display: block;
@@ -4269,11 +4269,11 @@ meta.foundation-mq-topbar {
         font-size: 0.8125rem;
         padding-right: 1.6666666667rem;
         padding-left: 1.6666666667rem;
-        background-color: #2ec3d6;
-        border-color: #229eae;
+        background-color: #259be5;
+        border-color: #177ebe;
         color: #FFFFFF; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          background-color: #229eae; }
+          background-color: #177ebe; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: #FFFFFF; }
       .top-bar-section ul li > a.button.secondary {
@@ -4312,11 +4312,11 @@ meta.foundation-mq-topbar {
       font-size: 0.8125rem;
       padding-right: 1.6666666667rem;
       padding-left: 1.6666666667rem;
-      background-color: #2ec3d6;
-      border-color: #229eae;
+      background-color: #259be5;
+      border-color: #177ebe;
       color: #FFFFFF; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-        background-color: #229eae; }
+        background-color: #177ebe; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
         color: #FFFFFF; }
       .top-bar-section ul li > button.secondary {
@@ -4767,11 +4767,11 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 
 /* Default Link Styles */
 a {
-  color: #2ec3d6;
+  color: #259be5;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #25aabb; }
+    color: #1887cc; }
   a img {
     border: none; }
 
@@ -6085,7 +6085,7 @@ iframe {
   text-transform: uppercase;
   letter-spacing: 0.02em; }
   .shalom-header h1.site-title a:hover {
-    color: #2ec3d6; }
+    color: #259be5; }
   .home-template .shalom-header h1.site-title {
     color: #F9F9F9; }
   @media only screen and (min-width:40.063em) {
@@ -6213,7 +6213,7 @@ iframe {
     display: block;
     width: 0;
     height: 0.125rem;
-    background-color: #2ec3d6;
+    background-color: #259be5;
     bottom: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -6224,7 +6224,7 @@ iframe {
 
   .shalom-blog-menu ul li a:hover, .shalom-blog-menu ul li a:focus, .shalom-blog-menu ul li a:active {
     text-decoration: none;
-    color: #2ec3d6; }
+    color: #259be5; }
 
   .shalom-blog-menu ul li a:hover:after, .shalom-blog-menu ul li a:focus:after, .shalom-blog-menu ul li a:active:after {
     opacity: 1;
@@ -6285,7 +6285,7 @@ iframe {
   color: #fff; }
 
 .headroom .shalom-blog-menu a:after {
-  background-color: #2ec3d6;
+  background-color: #259be5;
   height: 0.125rem; }
 
 .headroom .shalom-header {
