@@ -43,7 +43,8 @@ var shalom = (function ($) {
               $(sliderClass).each(function() {
                 $(this).owlCarousel({
                   autoPlay: 5000,
-                  singleItem: true
+                  singleItem: true,
+                  transitionStyle: "fade"
                 });
               });
             };
