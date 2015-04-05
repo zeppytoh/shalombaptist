@@ -5900,7 +5900,7 @@ ol {
   margin-left: 1.6rem; }
 
 a {
-  color: #252525; }
+  color: inherit; }
 
 a:hover, a:active, a:focus {
   color: #0c0c0c; }
@@ -6142,12 +6142,15 @@ iframe {
   display: block;
   margin: 0;
   width: 100%;
-  font-size: 2.25rem;
   text-align: center;
-  padding: 0.3125rem; }
+  padding: 0.3125rem;
+  font-size: 0.8rem; }
 
 .shalom-blog-menu ul li a {
   color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  letter-spacing: 0.125rem;
   display: block;
   width: 100%;
   height: 100%;
@@ -6209,9 +6212,9 @@ iframe {
     content: " ";
     display: block;
     width: 0;
-    height: 0.1875rem;
+    height: 0.125rem;
     background-color: #2ec3d6;
-    bottom: 0;
+    bottom: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -6282,7 +6285,7 @@ iframe {
   color: #fff; }
 
 .headroom .shalom-blog-menu a:after {
-  background-color: #fff;
+  background-color: #2ec3d6;
   height: 0.125rem; }
 
 .headroom .shalom-header {
@@ -6842,13 +6845,18 @@ iframe {
 /********************/
 .shalom-site-footer {
   background: #fff;
-  padding: 6.25rem 0;
-  font-size: 0.875rem;
+  padding: 1.125rem 0;
   font-weight: 300;
   color: #252525;
-  text-align: center;
+  text-align: left;
   position: relative;
   z-index: 2; }
+  .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
+    font-size: 1.125em; }
+  @media only screen and (min-width:40.063em) {
+    .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
+      font-size: 0.875rem; }
+ }
 
 .shalom-site-footer a {
   color: #252525; }
@@ -7019,36 +7027,51 @@ main.shalom-index-content {
   min-height: 100%; }
 
 .tile-wrapper {
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  margin: 0px auto; }
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  margin: 0px auto;
+  margin-top: 2rem; }
 
 .slider-tile {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 0px auto;
   text-align: center;
-  padding-top: 60px;
-  height: 330px; }
+  padding: 1.875rem 0; }
 
 .slider-tile i {
   color: #252525 !important;
-  font-size: 2.5em; }
+  font-size: 2.5rem; }
 
 .slider-tile h5 {
   color: #252525 !important;
-  margin-top: 1em;
-  margin-bottom: 2em; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  letter-spacing: 120%;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
 
 .slider-tile hr {
-  border-bottom: 0.3em solid #333333;
-  margin-bottom: 2em; }
+  border-bottom: 0.125em solid #333333;
+  margin-bottom: 2rem; }
 
 .slider-tile .biline {
   width: 85%;
   font-weight: 300;
   margin: 0px auto;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif, Georgia, seif; }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.slider-tile a.button {
+  margin-top: 1.875rem;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background: transparent;
+  padding: 1em;
+  color: #333333; }
+  .slider-tile a.button:hover {
+    background-color: #333333;
+    color: #F9F9F9; }
 
 .hero-row {
   width: 100%;
@@ -7156,29 +7179,42 @@ main.shalom-index-content {
   background-color: rgba(255, 255, 255, 0.5); }
 
 #events-division {
-  background-color: #F6F6F6;
+  background-color: #DDDDDD;
   border-top: 0.675rem solid white; }
 
-#quote-division {
+#newhere {
+  background-color: #F9F9F9; }
+  #newhere ul li img {
+    width: 100%;
+    height: 100%;
+    border: 0.0625rem solid #AAAAAA;
+    padding: 0.3125rem; }
+
+#contact {
+  background-color: #888888; }
+  #contact h2, #contact h3, #contact h4, #contact p {
+    color: #F9F9F9; }
+  #contact .panel {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: #000; }
+
+#about {
   background: url('../img/f2.jpg');
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
-
-#about {
-  background-color: #999999; }
   #about h2, #about p {
     color: #F9F9F9; }
   #about .panel {
-    background-color: #969696; }
+    background-color: #cdcdcd; }
 
-#quote-division:before, #events-division:before, #about:before {
+#quote-division:before, #events-division:before, #about:before, #contact:before {
   content: '';
   width: 100%;
   height: 100%;
   position: absolute; }
 
-#quote-division .medium-8, #events-division .medium-8, #about .medium-8 {
+#quote-division, #events-division, #about, #newhere, #contact {
   padding-top: 2em;
   padding-bottom: 2em; }
 
@@ -7199,37 +7235,6 @@ main.shalom-index-content {
 
 #quote-divider .btn i {
   margin-right: 5px; }
-
-#clients {
-  background: url('../img/d2.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative; }
-
-#clients:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute; }
-
-#clients .large-12 {
-  margin-top: 88px;
-  margin-bottom: 44px; }
-
-#clients .large-12 .hr {
-  background-color: #fff;
-  margin-top: 22px; }
-
-.client {
-  margin-bottom: 88px; }
-
-.client img {
-  width: 80%; }
-
-.client .pad {
-  position: relative;
-  bottom: 20px; }
 
 /* clearfix */
 .cf:before, .shalom-post-container:before, .shalom-post-author:before, .shalom-post-tags:before, .cf:after, .shalom-post-container:after, .shalom-post-author:after, .shalom-post-tags:after {
@@ -7759,3 +7764,10 @@ body.post-template, body.tag-template, body.author-template {
   width: 100%;
   height: 100%;
   display: block; }
+
+.sermons {
+  padding-top: 2.125rem; }
+  .sermons .row {
+    background-color: #fff; }
+  .sermons h2 {
+    padding-top: 0; }
