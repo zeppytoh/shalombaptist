@@ -45,9 +45,6 @@
             <a href="http://localhost/sermons" class="">Sermons</a>
           </li>
           <li>
-            <a href="http://localhost/connect" class="">Connect</a>
-          </li>
-          <li>
             <a href="http://localhost/events" class="">Events</a>
           </li>
           <li>
@@ -105,8 +102,6 @@
               <a href="http://localhost/sermons" class="active">Sermons</a>
             </li>
             <li>
-              <a href="http://localhost/connect" class="">Connect</a>
-            </li>
             <li>
               <a href="http://localhost/events" class="">Events</a>
             </li>
@@ -118,19 +113,96 @@
         </div>
     </div>
 	</header>
-	<main class="shalom-post-container" role="main">
+	<main class="shalom-index-content" role="main">
 			<section class="shalom-post-head shalom-post-head-cover small-12 columns">
 				<div class="shalom-post-cover" style="background-image: url('img/f2.jpg');">
-					<h1 class="shalom-post-title">Sermons</h1>
+					<h1 class="shalom-post-title">Sermons from the Word of God</h1>
 				</div>
+<!--
 				<time datetime="2014-10-18">
 					<span class="date">
 						<span class="mounth">Oct</span>
 						<span class="day">18</span>
 					</span>
 				</time>
+-->
 			</section>
 		<div class="cf"></div>
+      <div class="post shalom-post row">
+        <div class="small-12 columns">
+          <h3>Browse past sermons</h3>
+          <div id="shalom-grid" class="shuffle">
+          <article class="shalom-index-post post">
+            <div class="shalom-index-post-img">
+					<p><img src="./img/01-screenshot.jpg" alt="Senior men at prayer"></p>
+
+			</div>
+
+            <div class="shalom-index-post-container">
+              <header class="shalom-index-post-header">
+                <div class="shalom-index-post-meta">
+                  <i class="fa fa-calendar"></i>
+                  <time datetime = "2015-04-03">2 May 2015</time>
+                </div>
+                <h3 class="shalom-index-post-title">May Prayer Meeting</h3>
+              </header>
+              <section class="shalom-index-post-excerpt">
+					<p>Church-wide prayer will happen on the first Saturday of May. Will you mobilise others to pray?</p>
+
+
+				</section>
+            </div>
+          </article>
+
+          <article class="shalom-index-post post">
+            <div class="shalom-index-post-img">
+
+
+			</div>
+            <div class="shalom-index-post-container">
+              <header class="shalom-index-post-header">
+                <div class="shalom-index-post-meta">
+                  <i class="fa fa-calendar"></i>
+                  <time datetime = "2015-04-03">26 April 2015</time>
+                </div>
+                <h3 class="shalom-index-post-title">Young Adult Forum</h3>
+              </header>
+              <section class="shalom-index-post-excerpt">
+					<p>Come and pray with us to reach the young adults.</p>
+						<div class="shalom-index-author">
+							<img src="/img/ps-anthony-portrait.jpg" class="shalom-index-author-image" alt="Ava Johnson"> <a href="/author/anthony-yeoh/">Anthony Yeoh</a>
+						</div>
+
+				</section>
+            </div>
+          </article>
+
+          <article class="shalom-index-post post">
+            <div class="shalom-index-post-img">
+					<p><img src="./img/events/Amos_JiaEn_Good_Friday_play.jpg" alt="Senior men at prayer"></p>
+
+			</div>
+
+            <div class="shalom-index-post-container">
+              <header class="shalom-index-post-header">
+                <div class="shalom-index-post-meta">
+                  <i class="fa fa-calendar"></i>
+                  <time datetime = "2015-04-03">12 July 2015</time>
+                </div>
+                <h3 class="shalom-index-post-title">Baptisms</h3>
+              </header>
+              <section class="shalom-index-post-excerpt">
+					<p>Baptism Service at East Coast</p>
+						<div class="shalom-index-author">
+							<img src="./img/ps-ayan-portrait.jpg" class="shalom-index-author-image" alt="Ayan Murry"> <a href="/author/ava-johnson/">Ayan Murry</a>
+						</div>
+
+				</section>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
 		<article class="post tag-people tag-animals tag-cover shalom-post row">
 			<section class="shalom-post-content small-12 columns">
 				<h2 id="loremipsum">Lorem ipsum</h2>
@@ -247,9 +319,9 @@
   <script src="js/vendor/jquery.event.move.js"></script>
   <script src="js/vendor/smoothscroll.js"></script>
   <script src="js/vendor/jquery.flexslider.js"></script>
-
+  <script src="bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
   <script src="bower_components/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
-  <script src="js/vendor/headroom.js"></script>
+  <script src="js/vendor/headroom.min.js"></script>
   <script src="js/vendor/jquery.headroom.min.js"></script>
   <script src="js/app.js"></script>
 </body>

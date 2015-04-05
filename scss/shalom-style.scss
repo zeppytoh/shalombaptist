@@ -290,7 +290,7 @@ iframe {
   float: left;
 
   @media #{$small-up} {
-    width: 23%;
+    width: 25%;
   }
   @media #{$small-only} {
     h1.site-title {
@@ -568,6 +568,8 @@ iframe {
   font-size: 1em;
   margin-top: 0.2em;
   width: 90%;
+  color: $ghost;
+
 }
 
 .big-search {
@@ -1462,7 +1464,7 @@ main.shalom-index-content {
 }
 
 #about {
-  background-color: #767676;
+  background-color: $aluminum;
   h2, p {
     color: $snow;
   }
@@ -1479,7 +1481,7 @@ main.shalom-index-content {
 }
 
 #quote-division, #events-division, #about {
-  & .small-8 {
+  & .medium-8 {
       padding-top: 2em;
       padding-bottom: 2em;
   }

@@ -6055,7 +6055,7 @@ iframe {
   float: left; }
   @media only screen {
     .shalom-header {
-      width: 23%; } }
+      width: 25%; } }
   @media only screen and (max-width: 40em) {
     .shalom-header {
       width: 60%; }
@@ -6291,7 +6291,8 @@ iframe {
 .headroom .shalom-header h1.site-title {
   font-size: 1em;
   margin-top: 0.2em;
-  width: 90%; }
+  width: 90%;
+  color: #FAFAFA; }
 
 .big-search {
   position: absolute;
@@ -7162,7 +7163,7 @@ main.shalom-index-content {
   position: relative; }
 
 #about {
-  background-color: #767676; }
+  background-color: #999999; }
   #about h2, #about p {
     color: #F9F9F9; }
   #about .panel {
@@ -7174,7 +7175,7 @@ main.shalom-index-content {
   height: 100%;
   position: absolute; }
 
-#quote-division .small-8, #events-division .small-8, #about .small-8 {
+#quote-division .medium-8, #events-division .medium-8, #about .medium-8 {
   padding-top: 2em;
   padding-bottom: 2em; }
 
