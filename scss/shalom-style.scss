@@ -1115,15 +1115,17 @@ iframe {
 /* shalom site footer */
 /********************/
 .shalom-site-footer {
-    background: #fff;
+    background: $oil;
     padding: 1.125rem 0;
     font-weight: 300;
-    color: #252525;
     text-align: left;
     position: relative;
     z-index: 2;
   p, ul, ol, a {
     font-size: 0.875rem;
+  }
+  p, ul, ol, a, h3, h4, h5, h6 {
+        color: $vapor;
   }
   .shalom-copyright {
    font-size: 0.675rem;
@@ -1133,6 +1135,10 @@ iframe {
       font-size: 1rem;
     }
   }
+.shalom-final ul {
+  @include inline-list;
+}
+
 }
 
 .shalom-site-footer a:hover, .shalom-site-footer a:active, .shalom-site-footer a:focus {

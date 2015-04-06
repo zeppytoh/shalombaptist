@@ -6844,21 +6844,36 @@ iframe {
 /* shalom site footer */
 /********************/
 .shalom-site-footer {
-  background: #fff;
+  background: #333333;
   padding: 1.125rem 0;
   font-weight: 300;
-  color: #252525;
   text-align: left;
   position: relative;
   z-index: 2; }
   .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
     font-size: 0.875rem; }
+  .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a, .shalom-site-footer h3, .shalom-site-footer h4, .shalom-site-footer h5, .shalom-site-footer h6 {
+    color: #F6F6F6; }
   .shalom-site-footer .shalom-copyright {
     font-size: 0.675rem; }
   @media only screen and (min-width:40.063em) {
     .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
       font-size: 1rem; }
  }
+  .shalom-site-footer .shalom-final ul {
+    margin: 0 auto 1.0625rem auto;
+    margin-left: -1.375rem;
+    margin-right: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden; }
+    .shalom-site-footer .shalom-final ul > li {
+      list-style: none;
+      float: left;
+      margin-left: 1.375rem;
+      display: block; }
+      .shalom-site-footer .shalom-final ul > li > * {
+        display: block; }
 
 .shalom-site-footer a:hover, .shalom-site-footer a:active, .shalom-site-footer a:focus {
   color: inherit;
