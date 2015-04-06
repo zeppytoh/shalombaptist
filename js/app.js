@@ -336,29 +336,7 @@ var shalom = (function ($) {
 	        });
 	    },
 
-	    _searchModule = function() {
-	        var $openSearchBtn = $('.js-open-search');
-	        var $closeSearchBtn = $('.js-close-search');
-	        var $bigSearchContainer = $('.big-search');
-	        // ghost hunter init
-	        var ghostHunter = $('.js-search-input').ghostHunter({
-	            results: '.js-search-results',
-	            result_template: '<a href="{{link}}"><p><h2><i class="fa fa-fw fa-dot-circle-o"></i> {{title}}</h2></p></a>',
-	            onKeyUp: true,
-	            rss: '/rss/'
-	        });
-	        $openSearchBtn.on('click', function (e) {
-	            e.preventDefault();
-	            $bigSearchContainer.addClass('open');
-	            $(window).scrollTop(0);
-	            $bigSearchContainer.find('input[type=text]').focus();
-	        });
-	        $closeSearchBtn.on('click', function (e) {
-	            e.preventDefault();
-	            ghostHunter.clear();
-	            $bigSearchContainer.removeClass('open');
-	        });
-	    },
+
 	    // based on : 'Reading Position Indicator' article
         // http://css-tricks.com/reading-position-indicator/
         _positionIndicator = function () {
@@ -452,7 +430,6 @@ var shalom = (function ($) {
 			_magnificPopup();
 			_loadMoreButtonOnStart();
 			_headroom();
-			_searchModule();
 			_positionIndicator();
 			_readingTime();
 			_bodyFixed();
