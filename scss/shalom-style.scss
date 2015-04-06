@@ -1123,7 +1123,7 @@ iframe {
     position: relative;
     z-index: 2;
   p, ul, ol, a {
-    font-size: 1.125em;
+    font-size: 1em;
   }
   @media #{$medium-up} {
     p, ul, ol, a {
@@ -1133,7 +1133,7 @@ iframe {
 }
 
 .shalom-site-footer a {
-    color: #252525;
+    color: $aluminum;
 }
 
 .shalom-site-footer a:hover, .shalom-site-footer a:active, .shalom-site-footer a:focus {
