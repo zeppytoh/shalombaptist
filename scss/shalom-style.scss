@@ -1123,17 +1123,16 @@ iframe {
     position: relative;
     z-index: 2;
   p, ul, ol, a {
-    font-size: 1em;
+    font-size: 0.875rem;
+  }
+  .shalom-copyright {
+   color: $primary-color;
   }
   @media #{$medium-up} {
     p, ul, ol, a {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
   }
-}
-
-.shalom-site-footer a {
-    color: $aluminum;
 }
 
 .shalom-site-footer a:hover, .shalom-site-footer a:active, .shalom-site-footer a:focus {

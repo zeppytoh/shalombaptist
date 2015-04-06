@@ -6852,14 +6852,13 @@ iframe {
   position: relative;
   z-index: 2; }
   .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
-    font-size: 1em; }
+    font-size: 0.875rem; }
+  .shalom-site-footer .shalom-copyright {
+    color: #3bb3ff; }
   @media only screen and (min-width:40.063em) {
     .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
-      font-size: 0.875rem; }
+      font-size: 1rem; }
  }
-
-.shalom-site-footer a {
-  color: #999999; }
 
 .shalom-site-footer a:hover, .shalom-site-footer a:active, .shalom-site-footer a:focus {
   color: inherit;
