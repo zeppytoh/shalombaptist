@@ -1115,7 +1115,7 @@ iframe {
 /* shalom site footer */
 /********************/
 .shalom-site-footer {
-    background: $oil;
+    background: $gainsboro;
     padding: 1.125rem 0;
     font-weight: 300;
     text-align: left;
@@ -1125,7 +1125,7 @@ iframe {
     font-size: 0.875rem;
   }
   p, ul, ol, a, h3, h4, h5, h6 {
-        color: $vapor;
+        color: $monsoon;
   }
   .shalom-copyright {
    font-size: 0.675rem;
@@ -1716,7 +1716,15 @@ body.author-template {
     -ms-box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3);
     -o-box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3);
+
+    &.float.left {
+      margin-right: 1rem;
+    }
+    &.float.right {
+      margin-left: 1rem;
+    }
+  }
   .shalom-page-container .shalom-page .shalom-post-head h1.shalom-post-title,
   .shalom-page-container .shalom-tag .shalom-post-head h1.shalom-post-title,
   .shalom-tag-container .shalom-page .shalom-post-head h1.shalom-post-title,
@@ -1977,8 +1985,8 @@ body.author-template {
         height: 100%;
         display: block; }
 
-.sermons {
- padding-top: 2.125rem;
+.sermons, .events {
+ padding-top: 1.125rem;
   .row {
     background-color: #fff;
   }
@@ -1986,7 +1994,41 @@ body.author-template {
   h2 {
     padding-top: 0;
   }
+  time {
+    font-size: 1.2rem;
+  }
+  img {
+    margin-top: 0.5rem;
+  }
+  .fentry {
+    @include grid-row();
+    border-bottom: 1px solid $aluminum;
+    margin: 1rem 0;
+  }
 
 }
 
+#small-groups {
+  @include grid-row();
+  .card {
+    @media #{$small-up} {
+      @include grid-column(3, $float:left);
 
+    }
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  p {
+    font-size: 0.875rem;
+  }
+    border-bottom: 2px solid $vapor;
+    .fa-ul {
+      font-size: 1rem;
+      margin-left: 1.875rem;
+    }
+  }
+}
+
+.form-icon {
+  float: right;
+}

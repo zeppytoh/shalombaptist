@@ -6844,7 +6844,7 @@ iframe {
 /* shalom site footer */
 /********************/
 .shalom-site-footer {
-  background: #333333;
+  background: #DDDDDD;
   padding: 1.125rem 0;
   font-weight: 300;
   text-align: left;
@@ -6853,7 +6853,7 @@ iframe {
   .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a {
     font-size: 0.875rem; }
   .shalom-site-footer p, .shalom-site-footer ul, .shalom-site-footer ol, .shalom-site-footer a, .shalom-site-footer h3, .shalom-site-footer h4, .shalom-site-footer h5, .shalom-site-footer h6 {
-    color: #F6F6F6; }
+    color: #777777; }
   .shalom-site-footer .shalom-copyright {
     font-size: 0.675rem; }
   @media only screen and (min-width:40.063em) {
@@ -7409,6 +7409,10 @@ body.post-template, body.tag-template, body.author-template {
   -moz-box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.3); }
+  .shalom-page-container .shalom-page img.float.left, .shalom-page-container .shalom-page .flex-video.float.left, .shalom-page-container .shalom-tag img.float.left, .shalom-page-container .shalom-tag .flex-video.float.left, .shalom-tag-container .shalom-page img.float.left, .shalom-tag-container .shalom-page .flex-video.float.left, .shalom-tag-container .shalom-tag img.float.left, .shalom-tag-container .shalom-tag .flex-video.float.left {
+    margin-right: 1rem; }
+  .shalom-page-container .shalom-page img.float.right, .shalom-page-container .shalom-page .flex-video.float.right, .shalom-page-container .shalom-tag img.float.right, .shalom-page-container .shalom-tag .flex-video.float.right, .shalom-tag-container .shalom-page img.float.right, .shalom-tag-container .shalom-page .flex-video.float.right, .shalom-tag-container .shalom-tag img.float.right, .shalom-tag-container .shalom-tag .flex-video.float.right {
+    margin-left: 1rem; }
 
 .shalom-page-container .shalom-page .shalom-post-head h1.shalom-post-title, .shalom-page-container .shalom-tag .shalom-post-head h1.shalom-post-title, .shalom-tag-container .shalom-page .shalom-post-head h1.shalom-post-title, .shalom-tag-container .shalom-tag .shalom-post-head h1.shalom-post-title {
   border-top: 0;
@@ -7710,9 +7714,62 @@ body.post-template, body.tag-template, body.author-template {
   height: 100%;
   display: block; }
 
-.sermons {
-  padding-top: 2.125rem; }
-  .sermons .row {
+.sermons, .events {
+  padding-top: 1.125rem; }
+  .sermons .row, .events .row {
     background-color: #fff; }
-  .sermons h2 {
+  .sermons h2, .events h2 {
     padding-top: 0; }
+  .sermons time, .events time {
+    font-size: 1.2rem; }
+  .sermons img, .events img {
+    margin-top: 0.5rem; }
+  .sermons .fentry, .events .fentry {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+    border-bottom: 1px solid #999999;
+    margin: 1rem 0; }
+    .sermons .fentry:before, .sermons .fentry:after, .events .fentry:before, .events .fentry:after {
+      content: " ";
+      display: table; }
+    .sermons .fentry:after, .events .fentry:after {
+      clear: both; }
+
+#small-groups {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  #small-groups:before, #small-groups:after {
+    content: " ";
+    display: table; }
+  #small-groups:after {
+    clear: both; }
+  #small-groups .card {
+    border-bottom: 2px solid #F6F6F6; }
+    @media only screen {
+      #small-groups .card {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 25%;
+        float: left; } }
+    @media only screen and (max-width: 40em) {
+      #small-groups .card {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 100%;
+        float: left; } }
+    #small-groups .card p {
+      font-size: 0.875rem; }
+    #small-groups .card .fa-ul {
+      font-size: 1rem;
+      margin-left: 1.875rem; }
+
+.form-icon {
+  float: right; }
