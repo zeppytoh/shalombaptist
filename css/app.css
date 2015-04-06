@@ -6765,7 +6765,7 @@ iframe {
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 50% 50%;
+      background-position: 80% 30%;
       box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
       padding-top: 8rem; }
       @media only screen and (min-width:40.063em) {
@@ -7109,76 +7109,7 @@ main.shalom-index-content {
     font-size: 28px;
     padding-top: 5px; }
 
-.black-box {
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 2em;
-  font-weight: 900;
-  color: #fff; }
-  @media only screen and (min-width:40.063em) {
-    .black-box {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 50%;
-      float: left;
-      margin-left: 1em;
-      margin-right: -1em; } }
-  @media only screen and (max-width: 40em) {
-    .black-box {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 91.6666666667%;
-      float: left;
-      margin-left: auto;
-      margin-right: auto;
-      float: none;
-      text-align: center; } }
-  .black-box h4 {
-    font-weight: 900; }
-
-.trans-box {
-  background-color: rgba(255, 255, 255, 0);
-  padding: 1em; }
-  @media only screen and (min-width:40.063em) {
-    .trans-box {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 41.6666666667%;
-      float: right;
-      float: left;
-      margin-left: 8.3333333333% !important;
-      text-align: left; } }
-  @media only screen and (max-width: 40em) {
-    .trans-box {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 100%;
-      float: left;
-      text-align: center; } }
-  .trans-box p {
-    color: white; }
-  .trans-box a {
-    background: black;
-    padding: 0.5em; }
-  .trans-box a:hover {
-    text-decoration: underline; }
-  .trans-box h3 {
-    line-height: 140%;
-    color: #fff;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    text-align: left; }
-
-.secondary.small.button {
-  background-color: transparent;
-  color: #fff;
-  border: 2px #fff solid;
-  border-radius: 5px;
-  padding: 15px 50px 15px 50px;
-  margin: 0; }
-
-.secondary.small.button:hover {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-#events-division {
+#events {
   background-color: #DDDDDD;
   border-top: 0.675rem solid white; }
 

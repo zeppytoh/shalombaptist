@@ -999,7 +999,7 @@ iframe {
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 50% 50%;
+      background-position: 80% 30%;
       box-shadow: inset 4px 0px 90px 10px rgba(0, 0, 0, 0.4);
       padding-top: 8rem;
       @media #{$medium-up} {
@@ -1421,66 +1421,8 @@ main.shalom-index-content {
     padding-top: 5px;
   }
 }
-.black-box {
-  @media #{$medium-up} {
-    @include grid-column(6);
-    margin-left: 1em; margin-right: -1em;
-  }
-  @media #{$small-only} {
-    @include grid-column(11, $center: true);
-    text-align: center;
-  }
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 2em;
-  font-weight: 900;
-  color: #fff;
-  h4 {
-    font-weight: 900;
-  }
-}
-.trans-box {
-  @media #{$medium-up} {
 
-    @include grid-column(5, $offset:1, $last-column: true);
-    text-align: left;
-  }
-  @media #{$small-only} {
-    @include grid-column(12);
-    text-align: center;
-  }
-  background-color: rgba(255, 255, 255, 0);
-  padding: 1em;
-  p {
-    color: white;
-  }
-  a {
-    background: black;
-    padding: 0.5em;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  h3 {
-    line-height: 140%;
-    color: #fff;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
-    text-align: left;
-  }
-}
-
-.secondary.small.button {
-    background-color: transparent;
-    color: #fff;
-    border: 2px #fff solid;
-    border-radius: 5px;
-    padding: 15px 50px 15px 50px;
-    margin: 0
-}
-
-.secondary.small.button:hover {
-    background-color: rgba(255, 255, 255, 0.5)
-}
-#events-division {
+#events {
   background-color: $gainsboro;
   border-top: 0.675rem solid white;
 }
